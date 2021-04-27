@@ -9,13 +9,13 @@ import org.eclipse.paho.client.mqttv3.MqttTopic;
 import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
 public class ClientMQTT {
-    public static final String HOST = "tcp://106.14.119.48:1883";
-    public static final String TOPIC1 = "hello";
+    public static final String HOST = "";
+    public static final String TOPIC1 = "";
     private static final String clientid = UUID.randomUUID().toString();
     private MqttClient client;
     private MqttConnectOptions options;
-    private String userName = "cwl";    //非必须
-    private String passWord = "19260817";  //非必须
+    private String userName = "";    //非必须
+    private String passWord = "";  //非必须
     private ScheduledExecutorService scheduler;
 
     public void start() {
